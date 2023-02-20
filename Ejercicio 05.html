@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian García</title>
+    <style>
+        header{
+            font: 1em sans-serif;
+            color: blue;
+            text-decoration: underline blue;
+            text-align: center;
+        }
+        button
+        {
+            color: #0099CC;
+            background: transparent;
+            border: 2px solid #0099CC;
+            border-radius: 6px;
+            padding: 16px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: grab;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        footer{
+            text-align: right;
+            background-color: white;
+        }
+    </style>
+    <script>
+        function limpiar(){
+    document.getElementById("miFormulario").reset()
+    }
+
+    function sumar(){
+    var x = parseInt(document.getElementById("valor1").value)
+    var y = parseInt(document.getElementById("valor2").value)
+    document.getElementById("el_resultado").innerHTML = x + y
+    }
+
+    function restar(){
+    var x = parseInt(document.getElementById("valor1").value)
+    var y = parseInt(document.getElementById("valor2").value)
+    document.getElementById("el_resultado").innerHTML = x - y
+    }
+
+    function multiplicar(){
+    var x = parseInt(document.getElementById("valor1").value)
+    var y = parseInt(document.getElementById("valor2").value)
+    document.getElementById("el_resultado").innerHTML = x * y
+    }
+
+    function dividir(){
+    var x = parseInt(document.getElementById("valor1").value)
+    var y = parseInt(document.getElementById("valor2").value)
+    document.getElementById("el_resultado").innerHTML = x / y
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <p><h1>Calculadora para programacion II</h1></p>
+    </header>
+    <main>
+        <form id="miFormulario">
+            <label>Numero 1:</label>
+            <input type="number" name="" id="valor1" autofocus placeholder="Ingrese una cifra">
+            <br>
+            <br>
+            <label>Numero 2:</label>
+            <input type="number" name="" id="valor2" autofocus placeholder="Ingrese un cifra">
+            <br>
+            <br>
+            <button type="button" onclick="sumar()">Sumar</button>
+            <button type="button" onclick="restar()">Restar</button>
+            <button type="button" onclick="multiplicar()">Multiplicar</button>
+            <button type="button" onclick="dividir()">Dividir</button>
+            <button onclick="limpiar()">Limpiar campos</button> 
+            <p><h3>El resultado es: 
+            <span id="el_resultado"></span></h3></p>
+        </form>
+    </main>
+    <footer>
+        <i><a target="_blank" href="mailto:julig5855@gmail.com">Comuniquese con el desarrollador</a></i>
+    </footer>
+    
+</body>
+</html>
