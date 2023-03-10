@@ -6,10 +6,13 @@ let number1 = Math.floor(Math.random() * 100)
 let user2 = parseInt(prompt("Tirame un numero del 1 al 100"))
 let contador = 0
 
-while(user2 !== number1){
-    if(user2 < number1){
+while(user2 !== number1)
+{
+    if(user2 < number1)
+    {
       alert("Es un numero mayor")
-    }else if(user2 > number1){
+    }else if(user2 > number1)
+    {
       alert("Es un numero menor")
     }
     contador++
@@ -17,3 +20,4 @@ while(user2 !== number1){
   }
 
 document.write("¡Felicidades! Has acertado el número en " + (contador + 1) + " intentos")
+console.log("¡Felicidades! Has acertado el número en " + (contador + 1) + " intentos")
