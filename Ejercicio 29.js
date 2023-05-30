@@ -7,7 +7,6 @@ final de importación, sabiendo que los gastos son:
     b. Flete desde el país de origen: U$S 200,00.
         c. Seguro por daños o extravío: 2% del valor declarado del bien
 */
-
 //Lo primero que analizare sera la entrada de datos
 let valorDlc = parseInt(prompt("Ingrese el valor declarado del bien"))
 //Flete
