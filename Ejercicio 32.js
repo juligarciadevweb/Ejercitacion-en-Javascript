@@ -24,3 +24,15 @@ float calcularSalarioMensual(int horasTrabajadas) {
 
     return salarioMensual;
 }
+
+int main() {
+    int horasTrabajadas;
+    printf("Ingrese la cantidad de horas trabajadas durante el mes: ");
+    scanf("%d", &horasTrabajadas);
+
+    float salario = calcularSalarioMensual(horasTrabajadas);
+
+    printf("El salario mensual es: $%.2f\n", salario);
+
+    return 0;
+}
