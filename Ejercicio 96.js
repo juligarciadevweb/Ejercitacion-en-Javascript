@@ -15,12 +15,12 @@ let x = 0
        //No debes usar la palabra reservada let, porque ya esta declarada previamente
        suma = suma + nota
        //Usamos una compuerta logica clasica para asegurarnos de que la nota se mayor a 0
-       if (nota != 0 && suma > mayor) 
+       if (nota < 10 && suma > mayor) 
         {
             mayor = nota
         } 
         x++
-    } while (nota != 0); 
+    } while (nota < 10); 
 
 let promedio = suma / x
 console.log("El promedio de las notas es "+promedio)
